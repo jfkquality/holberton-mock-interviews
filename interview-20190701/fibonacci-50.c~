@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(void)
+{
+	int i = 3;
+	int j;
+	int k;
+	int l;
+
+	printf("%d, %d, ", 1, 2);
+
+	j = 1;
+	k = 2;;
+	while(i < 50)
+	{
+		printf("%d, ", j+k);
+
+		l  = j + k;
+		j = k;
+		k = l;
+
+		i++;
+	}
+	return (0);
+}

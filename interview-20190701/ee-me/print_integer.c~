@@ -1,0 +1,83 @@
+#include <stdio.h>
+
+void print_int(int);
+int digits(int);
+
+int main(void)
+{
+
+void print_int(int n);
+int digits(int n);
+
+	print_int(0);
+	putchar('\n');
+
+	print_int(3);
+	putchar('\n');
+
+	print_int(99);
+	putchar('\n');
+
+	print_int(-99);
+	putchar('\n');
+
+	print_int(402);
+	putchar('\n');
+
+	print_int(1024);
+	putchar('\n');
+
+	print_int(-999);
+	putchar('\n');
+
+	return (0);
+
+}
+
+void  print_int(int n)
+{
+	int c = 0;
+	int num;
+	int num2;
+	int cnt;
+	int tens = 1;
+
+	int digits(int n);
+
+	num = n;
+	num2 = num;
+	cnt = digits(num);
+	c = cnt;
+
+	if (num == 0 || cnt == 1)
+		putchar(n + '0');
+
+		while (c > 1);
+		{
+			tens *= 10;
+			c--;
+		}
+		num2 = num;
+		while (tens > 0)
+		{
+			num2 /= tens;
+			putchar(num2 + '0');
+			tens /= 10;
+		}
+
+}
+
+
+int digits(int n)
+{
+	int c = 0;
+	int n2 = n;
+
+	while (n2 > 0)
+	{
+		c++;
+		n2 /= 10;
+	}
+
+	return (c);
+}
